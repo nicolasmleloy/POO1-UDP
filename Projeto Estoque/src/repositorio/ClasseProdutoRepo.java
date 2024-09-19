@@ -37,6 +37,7 @@ public class ClasseProdutoRepo extends BaseRepositorio<ClasseProduto> {
     public ClasseProduto Add(ClasseProduto instancia) {
         ClasseProduto cp = this.dados.get(this.dados.size() - 1);
         instancia.setCodigo(cp.getCodigo() + 1);
+        this.dados.add(instancia);
         return instancia;
     }
 
