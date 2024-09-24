@@ -38,10 +38,10 @@ public class ClasseProdutoVisao {
   
   public void ExibirPorLinha(){
     ArrayList<ClasseProduto> lista = this.srv.Navegar();
-    System.out.println("--------------------------------");
     for(ClasseProduto cp : lista){
       this.ImprimirPorLinha(cp);
     }  
+    System.out.println("--------------------------------");
   }
   
   

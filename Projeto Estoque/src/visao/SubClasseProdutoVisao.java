@@ -29,19 +29,19 @@ public class SubClasseProdutoVisao {
     }
 
     public void Exibir(){
-        ArrayList<SubClasseProduto> lista = srv.Navegar();
-        System.out.println("--------------------------------");
+        ArrayList<SubClasseProduto> lista = this.srv.Navegar();
         for(SubClasseProduto scp : lista){
             this.Imprimir(scp);
         }
+        System.out.println("--------------------------------");
     }
 
     public void ExibirPorLinha(){
         ArrayList<SubClasseProduto> lista = this.srv.Navegar();
-        System.out.println("--------------------------------");
         for(SubClasseProduto scp : lista){
             this.ImprimirPorLinha(scp);
         }
+        System.out.println("--------------------------------");
     }
 
     public void Criar(SubClasseProduto novo){

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class BaseFakeDB<TDominio> {
   protected ArrayList<TDominio> tabela;
   public ArrayList<TDominio> getTabela(){
-    return this.tabela;
+    return tabela;
   }
 
   public abstract void preencherDados();

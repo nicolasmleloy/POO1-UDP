@@ -17,6 +17,11 @@ public class SubClasseProduto extends BaseParametro {
     super();
   }
 
+  @Override
+  public String toString() {
+      return "SubClasse Produto: " + codigo + "| Descricao: " + descricao + " | Data de Inclusao: " + dataDeInclusao + " | Codigo Classe: " + codigoClasse;    
+  }
+
   public SubClasseProduto(int codigo, String descricao, LocalDate dataDeInclusao, int codigoClasse) {
     super(codigo, descricao, dataDeInclusao);
     this.codigoClasse = codigoClasse;

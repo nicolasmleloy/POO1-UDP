@@ -36,9 +36,10 @@ public class SubClasseProdutoRepo extends BaseRepositorio<SubClasseProduto> {
     public SubClasseProduto Add(SubClasseProduto instancia) {
         SubClasseProduto scp = this.dados.get(this.dados.size() - 1);
         instancia.setCodigo(scp.getCodigo() + 1);
+        instancia.setCodigoClasse(scp.getCodigoClasse() + 1);
         this.dados.add(instancia);
         return instancia;
-    }
+    }   
 
     @Override
     public SubClasseProduto Delete(int chave) {
