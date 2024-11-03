@@ -39,5 +39,4 @@ public abstract class BaseParametro {
     this.descricao = descricao;
     this.dataDeInclusao = dataDeInclusao;
   }
-
 }

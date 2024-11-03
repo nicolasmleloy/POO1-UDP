@@ -7,7 +7,6 @@ public class ClasseProduto extends BaseParametro {
         super();
     }
     
-
     @Override
     public String toString() {
         return "Classe Produto: " + codigo + " | Descricao: " + descricao + "| Data de Inclusao: " + dataDeInclusao;    
