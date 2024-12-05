@@ -190,6 +190,7 @@ public class VeiculoMenu extends BaseMenu {
                             double preco = this.scanner.nextDouble();
                             veiculo.setPreco(preco);
                         default:
+                            System.out.println("Opção inválida!");
                             break;
                     }
                     break;
